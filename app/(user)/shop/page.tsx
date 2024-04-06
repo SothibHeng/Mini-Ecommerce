@@ -48,28 +48,22 @@ export default function Home() {
 
   return (
     <main className="">
-      {/* hero */}
-      {/* <div className="bg-gray-900 p-32">
-        <h1 className="text-pink-600 text-4xl text-center font-medium">
-          Shop at Amazom for fashion, gadgets and more
-        </h1>
-        <p className="text-gray-300 text-center text-lg mt-3">
-          Brace yourself as Amazom is here to fulfill your every desire! Immerse
-          yourself in a world of <br /> unparalleled fashion cutting-edge
-          gadgets, and a plethora of other must-have items.
-        </p>
-        <div className="flex justify-center mt-4">
-          <button className="text-pink-600 btn border-2 border-pink-600 px-6 py-2 rounded-md hover:bg-pink-700 hover:text-gray-100 hover:border-none">
-            Shop
-          </button>
+      <div className="max-w-screen-xl h-96 mx-auto flex justify-between">
+        <div className="w-[800px] h-full">
+          <h1 className="text-5xl font-semibold text-center mt-36">Finding the coolest product here with Amazom</h1>
+          
         </div>
-      </div> */}
+        <div className="w-[460px] h-full grid place-content-center">
+          <img className="w-[300px]" src="jacket.png" alt="" />
+        </div>
+      </div>
+
       {/* fetch data */}
       <div className="w-full min-h-screen flex flex-col items-center bg-gray-100">
-      <div className="w-full  flex flex-row justify-center mt-2">
-        <h1 className="p-20 text-3xl font-bold">Finding yours needs product here</h1>
-      </div>
-      <div className="h-auto py-4 px-2  w-[90%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
+      {/* <div className="w-full  flex flex-row justify-center mt-2">
+        <h1 className="p-10 mt-6 text-2xl font-bold">All product</h1>
+      </div> */}
+      <div className="h-auto py-4 px-2  w-[90%]  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 mt-12">
         {products.map((product: any, index: number) => (
           <CardProductComponent
             key={index}

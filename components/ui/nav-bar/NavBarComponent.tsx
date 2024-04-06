@@ -22,9 +22,12 @@ export default function NavBarComponent() {
         <img src="amazom.png" className="w-28 " alt="" />
       </Navbar.Brand>
       <div className="flex md:order-2">
-        <button className="text-pink-600 font-medium">
+        {/* <button className="text-pink-600 font-medium">
           Login
-        </button>
+        </button> */}
+        <Link href="/login">
+          <div className="text-pink-600 font-medium">Login</div>
+        </Link>
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>

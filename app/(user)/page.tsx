@@ -59,11 +59,19 @@ export default function Home() {
           yourself in a world of <br /> unparalleled fashion cutting-edge
           gadgets, and a plethora of other must-have items.
         </p>
-        <div className="flex justify-center mt-4">
+
+      <div className="flex justify-center mt-4">
+      <Link href="/shop">
+        <div className="text-pink-600 btn border-2 border-pink-600 px-6 py-2 rounded-md hover:bg-pink-700 hover:text-gray-100 hover:border-none">
+          Shop
+        </div>
+      </Link>
+    </div>
+        {/* <div className="flex justify-center mt-4">
           <button className="text-pink-600 btn border-2 border-pink-600 px-6 py-2 rounded-md hover:bg-pink-700 hover:text-gray-100 hover:border-none">
             Shop
           </button>
-        </div>
+        </div> */}
       </div>
       {/* fetch data */}
       <div className="w-full min-h-screen flex flex-col items-center bg-gray-100">
